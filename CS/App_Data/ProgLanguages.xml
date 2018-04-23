@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Languages>
+  <ProgLanguage ID="0"  Name="ActionScript"/>
+  <ProgLanguage ID="1"  Name="Basic"/>
+  <ProgLanguage ID="2"  Name="C"/>
+  <ProgLanguage ID="3"  Name="C++"/>
+  <ProgLanguage ID="4"  Name="C#"/>
+  <ProgLanguage ID="5"  Name="Delphi"/>
+  <ProgLanguage ID="6"  Name="Eiffel"/>
+  <ProgLanguage ID="7"  Name="Erlang"/>
+  <ProgLanguage ID="8"  Name="F#"/>
+  <ProgLanguage ID="9"  Name="Fortran"/>
+  <ProgLanguage ID="10" Name="GO"/>
+  <ProgLanguage ID="11" Name="Haskell"/>
+  <ProgLanguage ID="12" Name="Java"/>
+  <ProgLanguage ID="13" Name="JavaScript"/>
+  <ProgLanguage ID="14" Name="Lisp"/>
+  <ProgLanguage ID="15" Name="Lua"/>
+  <ProgLanguage ID="16" Name="Objective-C"/>
+  <ProgLanguage ID="17" Name="Pascal"/>
+  <ProgLanguage ID="18" Name="Perl"/>
+  <ProgLanguage ID="19" Name="PHP"/>
+  <ProgLanguage ID="20" Name="Prolog"/>
+  <ProgLanguage ID="21" Name="Python"/>
+  <ProgLanguage ID="22" Name="Ruby"/>
+  <ProgLanguage ID="23" Name="Scala"/>
+</Languages>

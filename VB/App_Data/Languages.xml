@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Languages>
+  <Language ID="0" Name="العربية" />
+  <Language ID="1" Name="Asturian" />
+  <Language ID="2" Name="简体中文" />
+  <Language ID="3" Name="繁體中文" />
+  <Language ID="4" Name="Čeština" />
+  <Language ID="5" Name="Dansk" />
+  <Language ID="6" Name="Nederlands" />
+  <Language ID="7" Name="English" />
+  <Language ID="8" Name="Suomi" />
+  <Language ID="9" Name="Français" />
+  <Language ID="10" Name="Deutsch" />
+  <Language ID="11" Name="Ελληνικά" />
+  <Language ID="12" Name="हिन्दी" />
+  <Language ID="13" Name="Magyar" />
+  <Language ID="14" Name="Italiano" />
+  <Language ID="15" Name="日本語" />
+  <Language ID="16" Name="한국어" />
+  <Language ID="17" Name="فارسی" />
+  <Language ID="18" Name="Polski" />
+  <Language ID="19" Name="Português" />
+  <Language ID="20" Name="Русский" />
+  <Language ID="21" Name="Español" />
+  <Language ID="22" Name="Svenska" />
+  <Language ID="23" Name="Türkçe" />
+</Languages>

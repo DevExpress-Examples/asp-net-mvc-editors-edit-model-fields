@@ -1,0 +1,95 @@
+@model CS.Controllers.MyModel
+@using(Html.BeginForm()) {  
+
+    <b>Automatically Bound Field - TextBox</b>
+    <br />
+    <br />
+    
+    @Html.DevExpress().TextBox(
+        settings => {
+            settings.Name = "Name";
+        }).Bind(Model.Name).GetHtml()
+    
+    <br />
+    <br />
+    <br />
+
+    <b>Automatically Bound Field - RadioButtonList (single select)</b>
+    <br />
+    <br />
+        
+    @(Html.DevExpress().RadioButtonList(settings => {
+            settings.Name = "Language";
+            settings.Properties.ValueField = "ID";
+            settings.Properties.TextField = "Name";
+            settings.Properties.ValueType = typeof(int);
+            settings.Properties.RepeatLayout = System.Web.UI.WebControls.RepeatLayout.Table;
+            settings.Properties.RepeatDirection = System.Web.UI.WebControls.RepeatDirection.Horizontal;
+            settings.Properties.RepeatColumns = 5;
+        })
+        .BindToXML(HttpContext.Current.Server.MapPath("~/App_Data/Languages.xml"), "//Language")
+        .Bind(Model.Language)
+        .GetHtml()
+    )
+
+    @Html.DevExpress().Button(settings => {
+        settings.Name = "btnUnselectRadioButtonList";
+        settings.Text = "Unselect All";
+        settings.ClientSideEvents.Click = "function(s, e) { Language.SetValue(null); }";
+    }).GetHtml()
+  
+    <br />
+    <br />
+    <br />
+    
+    <b>Manually Bound Field - CheckBoxList (multi select)</b>
+    <br />
+    <br />
+        
+    @(Html.DevExpress().CheckBoxList(settings => {
+            settings.Name = "ProgLanguagesUnbound";
+            settings.Properties.ValueField = "ID";
+            settings.Properties.TextField = "Name";
+            settings.Properties.ValueType = typeof(int);
+            settings.Properties.RepeatLayout = System.Web.UI.WebControls.RepeatLayout.Table;
+            settings.Properties.RepeatDirection = System.Web.UI.WebControls.RepeatDirection.Horizontal;
+            settings.Properties.RepeatColumns = 5;
+            settings.PreRender = (sender, e) => {
+                ASPxCheckBoxList cbl = (ASPxCheckBoxList)sender;
+                foreach(ListEditItem item in cbl.Items) {
+                    item.Selected = Model.ProgLanguages.Contains((int)item.Value);
+                }
+            };
+        })
+        .BindList(ViewData["ProgLanguageItems"])
+        .GetHtml()
+    )
+
+    <table>
+        <tr>
+            <td>
+                @Html.DevExpress().Button(settings => {
+                   settings.Name = "btnSelectCheckBoxList";
+                   settings.Text = "Select All";
+                   settings.ClientSideEvents.Click = "function(s, e) { ProgLanguagesUnbound.SelectAll(); }";
+               }).GetHtml()
+            </td>
+            <td>
+                @Html.DevExpress().Button(settings => {
+                   settings.Name = "btnUnselectCheckBoxList";
+                   settings.Text = "Unselect All";
+                   settings.ClientSideEvents.Click = "function(s, e) { ProgLanguagesUnbound.UnselectAll(); }";
+               }).GetHtml()
+            </td>
+        </tr>
+    </table>
+    
+    <br />
+
+    @Html.DevExpress().Button(settings => {
+        settings.Name = "btnSubmit";
+        settings.UseSubmitBehavior = true;
+        settings.Text = "Submit";
+    }).GetHtml()
+
+}

@@ -1,0 +1,19 @@
+@model CS.Controllers.MyModel
+
+<h2>Data is successufully submitted:</h2>
+
+Name: @Model.Name
+<br />
+<br />
+Language: @Model.Language
+<br />
+ProgLanguages:
+<ul>
+@foreach(int item in Model.ProgLanguages) {
+    <li>@item</li>
+}
+</ul>                     
+<br />
+<br />
+<br />
+@Html.ActionLink("Reload Demo", "Index")
