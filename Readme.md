@@ -1,3 +1,12 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Languages.xml](./CS/App_Data/Languages.xml) (VB: [Languages.xml](./VB/App_Data/Languages.xml))
+* [ProgLanguages.xml](./CS/App_Data/ProgLanguages.xml) (VB: [ProgLanguages.xml](./VB/App_Data/ProgLanguages.xml))
+* [HomeController.cs](./CS/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/Controllers/HomeController.vb))
+* [Index.cshtml](./CS/Views/Home/Index.cshtml)
+* [Success.cshtml](./CS/Views/Home/Success.cshtml)
+<!-- default file list end -->
 # How to use the CheckBoxList and RadioButtonList editors to edit Model fields
 
 
