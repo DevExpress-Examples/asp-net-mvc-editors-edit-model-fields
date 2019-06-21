@@ -8,6 +8,9 @@
 * [Success.cshtml](./CS/Views/Home/Success.cshtml)
 <!-- default file list end -->
 # How to use the CheckBoxList and RadioButtonList editors to edit Model fields
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e4125)**
+<!-- run online end -->
 
 
 <p>This example illustrates how to edit Model fields with different DevExpress MVC Editors.</p><p>Here are main requirements:<br />
