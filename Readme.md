@@ -9,7 +9,7 @@
 <!-- default file list end -->
 # How to use the CheckBoxList and RadioButtonList editors to edit Model fields
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e4125)**
+**[[Run Online]](https://codecentral.devexpress.com/e4125/)**
 <!-- run online end -->
 
 
