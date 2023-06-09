@@ -5,7 +5,7 @@
 <!-- default badges end -->
 # Data Editors for ASP.NET MVC - How to use data editors to edit Model fields
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e4125/)**
+**[[Run Online]](https://codecentral.devexpress.com/128549270/)**
 <!-- run online end -->
 
 This example demonstrates how to use data editors in bound and unbound modes to edit Model fields.
